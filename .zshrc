@@ -101,15 +101,3 @@ alias vocab="cat ~/KH/vocab.txt"
 # autojump
 [[ -s /home/hikwang/.autojump/etc/profile.d/autojump.sh ]] && source /home/hikwang/.autojump/etc/profile.d/autojump.sh
 autoload -U compinit && compinit -u
-
-# PATH
-export PATH="$PATH:/home/hikwang/mysh"
-
-# GO
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
-
-export GTK_IM_MODULE=fcitx    
-export QT_IM_MODULE=fcitx    
-export XMODIFIERS="@im=fcitx"
-export JSTESTDRIVER_HOME=~/bin
