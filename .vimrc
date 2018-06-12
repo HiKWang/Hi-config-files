@@ -1,3 +1,6 @@
+set ts=4
+set expandtab
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
