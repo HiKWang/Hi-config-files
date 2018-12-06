@@ -4,13 +4,17 @@ SHELL=/bin/bash
 # open firefox to finish worklog
 #30 09 * * 1-5 export DISPLAY=:0 && firefox --new-tab http://10.0.0.9/Worklog >/dev/null 2>&1
 #53 13 * * * export DISPLAY=:0 && notify-send  每天一条Linux命令
-#35 13 * * * export DISPLAY=:0 && notify-send  每天一ti
+0 17 * * * export DISPLAY=:0 && notify-send  Better Tomorrow
+30 17 * * 5 export DISPLAY=:0 && notify-send  push2git
 
 25 02 * * * rm /home/hikwang/Downloads/ica/* -rf
-53 13 3 * * rm /home/hikwang/Downloads/tmp/* -rf
+00 05 * * * rm /home/hikwang/Downloads/tmp/* -rf
 25 02 1 * * rm /tmp/fixbug/* -rf
-30 23 * * * export DISPLAY=:0 && wmctrl -c phpstorm
-30 22 * * * export DISPLAY=:0 && wmctrl -c chrome
-10 8 * * * export DISPLAY=:0 && google-chrome > /dev/null 2>&1 &
-0 8 * * * export DISPLAY=:0 && phpstorm > /dev/null 2>&1 &
+30 03 * * * export DISPLAY=:0 && wmctrl -c webstorm
+30 02 * * * export DISPLAY=:0 && wmctrl -c chrome
+#10 8 * * * export DISPLAY=:0 && google-chrome > /dev/null 2>&1 &
+#0 8 * * * export DISPLAY=:0 && phpstorm > /dev/null 2>&1 &
+35 18 * * * /home/hikwang/bin/autoPush2github.sh
+45 20 * * * /home/hikwang/bin/autoPush2github.sh
+35 21 * * * /home/hikwang/bin/autoPush2github.sh
 
